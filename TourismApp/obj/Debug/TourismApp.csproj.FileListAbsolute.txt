@@ -1,0 +1,11 @@
+C:\.NET Project\TourismApp\TourismApp\bin\Debug\TourismApp.exe.config
+C:\.NET Project\TourismApp\TourismApp\bin\Debug\TourismApp.exe
+C:\.NET Project\TourismApp\TourismApp\bin\Debug\TourismApp.pdb
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.csprojAssemblyReference.cache
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.Forms.FormLogin.resources
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.Forms.FormStart.resources
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.Properties.Resources.resources
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.csproj.GenerateResource.cache
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.csproj.CoreCompileInputs.cache
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.exe
+C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.pdb
