@@ -9,3 +9,22 @@ C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.csproj.GenerateResour
 C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.csproj.CoreCompileInputs.cache
 C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.exe
 C:\.NET Project\TourismApp\TourismApp\obj\Debug\TourismApp.pdb
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\TourismApp.exe.config
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\TourismApp.exe
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\TourismApp.pdb
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.csprojAssemblyReference.cache
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.Forms.FormLogin.resources
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.Forms.FormStart.resources
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.Properties.Resources.resources
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.csproj.GenerateResource.cache
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.exe
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.pdb
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\EntityFramework.dll
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\EntityFramework.xml
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.csproj.CopyComplete
+C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.Migrations.User.resources
+C:\Users\ASUS\source\repos\.NET\TourismApp\obj\Debug\TourismApp.Forms.FormMain.resources
+C:\Users\ASUS\source\repos\.NET\TourismApp\obj\Debug\TourismApp.Migrations.Lieu.resources
+C:\Users\ASUS\source\repos\.NET\TourismApp\obj\Debug\TourismApp.Forms.Ajouter.resources
