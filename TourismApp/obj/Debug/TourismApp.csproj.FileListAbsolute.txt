@@ -27,4 +27,6 @@ C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.csproj.CopyCompl
 C:\Users\ASUS\Source\Repos\.NET\TourismApp\obj\Debug\TourismApp.Migrations.User.resources
 C:\Users\ASUS\source\repos\.NET\TourismApp\obj\Debug\TourismApp.Forms.FormMain.resources
 C:\Users\ASUS\source\repos\.NET\TourismApp\obj\Debug\TourismApp.Migrations.Lieu.resources
-C:\Users\ASUS\source\repos\.NET\TourismApp\obj\Debug\TourismApp.Forms.Ajouter.resources
+C:\Users\ASUS\source\repos\.NET\TourismApp\bin\Debug\MetroFramework.Design.dll
+C:\Users\ASUS\source\repos\.NET\TourismApp\bin\Debug\MetroFramework.dll
+C:\Users\ASUS\source\repos\.NET\TourismApp\bin\Debug\MetroFramework.Fonts.dll

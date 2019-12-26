@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace TourismApp.Forms
 {
-    public partial class FormLogin : Form
+    public partial class FormLogin : Form 
     {
         ErrorProvider errorProvider = new ErrorProvider();
 
