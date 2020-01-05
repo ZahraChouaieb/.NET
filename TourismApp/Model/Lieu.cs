@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,11 @@ namespace TourismApp.Model
         [Required]
         [MaxLength(256)]
         public string zoneGeo { get; set; }
+
+
+        public int? catId { get; set; }
+        [ForeignKey("catId")]
+        public virtual Categorie categorie { get; set; }
 
 
         [Required]

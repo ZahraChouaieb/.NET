@@ -17,7 +17,9 @@ namespace TourismApp.Model
 
         public DbSet<User> Users { get; set; }
         public DbSet<Lieu> Lieu { get; set; }
+        public DbSet<Categorie> Categorie { get; set; }
+
     }
-    }
+}
 
 

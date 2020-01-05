@@ -30,9 +30,9 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMain));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
@@ -40,12 +40,11 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.recupLieu = new MetroFramework.Controls.MetroGrid();
-            this.lieuIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nameLieuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.villeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lieuBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.panel = new MetroFramework.Drawing.Html.HtmlPanel();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.categoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.tourismBDDataSet = new TourismApp.TourismBDDataSet();
+            this.label1 = new System.Windows.Forms.Label();
             this.browser = new MetroFramework.Controls.MetroButton();
             this.Description = new System.Windows.Forms.TextBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -59,11 +58,22 @@
             this.nomLieu = new MetroFramework.Controls.MetroTextBox();
             this.pictureLieu = new System.Windows.Forms.PictureBox();
             this.Sauvegarder = new System.Windows.Forms.Button();
+            this.categoriesTableAdapter = new TourismApp.TourismBDDataSetTableAdapters.CategoriesTableAdapter();
+            this.lieuBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.lieuIdDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameLieuDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.villeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.descriptionDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.fillByToolStrip = new System.Windows.Forms.ToolStrip();
+            this.fillByToolStripButton = new System.Windows.Forms.ToolStripButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.recupLieu)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lieuBindingSource)).BeginInit();
             this.panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourismBDDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLieu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lieuBindingSource)).BeginInit();
+            this.fillByToolStrip.SuspendLayout();
             this.SuspendLayout();
             // 
             // button1
@@ -142,14 +152,14 @@
             this.recupLieu.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.recupLieu.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.recupLieu.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.recupLieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.recupLieu.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.recupLieu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.recupLieu.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.lieuIdDataGridViewTextBoxColumn,
@@ -157,28 +167,28 @@
             this.villeDataGridViewTextBoxColumn,
             this.descriptionDataGridViewTextBoxColumn});
             this.recupLieu.DataSource = this.lieuBindingSource;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.recupLieu.DefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.recupLieu.DefaultCellStyle = dataGridViewCellStyle5;
             this.recupLieu.EnableHeadersVisualStyles = false;
             this.recupLieu.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.recupLieu.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.recupLieu.Location = new System.Drawing.Point(23, 135);
             this.recupLieu.Name = "recupLieu";
             this.recupLieu.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.recupLieu.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.recupLieu.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
             this.recupLieu.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.recupLieu.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.recupLieu.Size = new System.Drawing.Size(426, 229);
@@ -186,39 +196,13 @@
             this.recupLieu.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.recupLieu_CellClick);
             this.recupLieu.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.recupLieu_CellContentClick);
             // 
-            // lieuIdDataGridViewTextBoxColumn
-            // 
-            this.lieuIdDataGridViewTextBoxColumn.DataPropertyName = "lieuId";
-            this.lieuIdDataGridViewTextBoxColumn.HeaderText = "lieuId";
-            this.lieuIdDataGridViewTextBoxColumn.Name = "lieuIdDataGridViewTextBoxColumn";
-            // 
-            // nameLieuDataGridViewTextBoxColumn
-            // 
-            this.nameLieuDataGridViewTextBoxColumn.DataPropertyName = "nameLieu";
-            this.nameLieuDataGridViewTextBoxColumn.HeaderText = "nameLieu";
-            this.nameLieuDataGridViewTextBoxColumn.Name = "nameLieuDataGridViewTextBoxColumn";
-            // 
-            // villeDataGridViewTextBoxColumn
-            // 
-            this.villeDataGridViewTextBoxColumn.DataPropertyName = "ville";
-            this.villeDataGridViewTextBoxColumn.HeaderText = "ville";
-            this.villeDataGridViewTextBoxColumn.Name = "villeDataGridViewTextBoxColumn";
-            // 
-            // descriptionDataGridViewTextBoxColumn
-            // 
-            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
-            this.descriptionDataGridViewTextBoxColumn.HeaderText = "description";
-            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
-            // 
-            // lieuBindingSource
-            // 
-            this.lieuBindingSource.DataSource = typeof(TourismApp.Model.Lieu);
-            // 
             // panel
             // 
             this.panel.AutoScroll = true;
             this.panel.AutoScrollMinSize = new System.Drawing.Size(458, 0);
             this.panel.BackColor = System.Drawing.SystemColors.Window;
+            this.panel.Controls.Add(this.comboBox1);
+            this.panel.Controls.Add(this.label1);
             this.panel.Controls.Add(this.browser);
             this.panel.Controls.Add(this.Description);
             this.panel.Controls.Add(this.metroLabel1);
@@ -231,10 +215,44 @@
             this.panel.Controls.Add(this.ville);
             this.panel.Controls.Add(this.nomLieu);
             this.panel.Controls.Add(this.pictureLieu);
+            this.panel.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lieuBindingSource, "catId", true));
             this.panel.Location = new System.Drawing.Point(504, 94);
             this.panel.Name = "panel";
-            this.panel.Size = new System.Drawing.Size(458, 290);
+            this.panel.Size = new System.Drawing.Size(458, 327);
             this.panel.TabIndex = 11;
+            this.panel.Click += new System.EventHandler(this.panel_Click);
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedItem", this.lieuBindingSource, "catId", true));
+            this.comboBox1.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.categoriesBindingSource, "name", true));
+            this.comboBox1.DataSource = this.categoriesBindingSource;
+            this.comboBox1.DisplayMember = "name";
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(106, 171);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(176, 21);
+            this.comboBox1.TabIndex = 17;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            // 
+            // categoriesBindingSource
+            // 
+            this.categoriesBindingSource.DataMember = "Categories";
+            this.categoriesBindingSource.DataSource = this.tourismBDDataSet;
+            // 
+            // tourismBDDataSet
+            // 
+            this.tourismBDDataSet.DataSetName = "TourismBDDataSet";
+            this.tourismBDDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(43, 179);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "Catégorie";
             // 
             // browser
             // 
@@ -252,7 +270,7 @@
             // 
             this.Description.AccessibleName = "Description";
             this.Description.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.lieuBindingSource, "description", true));
-            this.Description.Location = new System.Drawing.Point(106, 175);
+            this.Description.Location = new System.Drawing.Point(106, 212);
             this.Description.Multiline = true;
             this.Description.Name = "Description";
             this.Description.Size = new System.Drawing.Size(176, 95);
@@ -272,7 +290,7 @@
             // 
             this.metroLabel5.AutoSize = true;
             this.metroLabel5.FontSize = MetroFramework.MetroLabelSize.Small;
-            this.metroLabel5.Location = new System.Drawing.Point(29, 181);
+            this.metroLabel5.Location = new System.Drawing.Point(32, 212);
             this.metroLabel5.Name = "metroLabel5";
             this.metroLabel5.Size = new System.Drawing.Size(63, 15);
             this.metroLabel5.TabIndex = 9;
@@ -319,6 +337,7 @@
             this.temperature.Size = new System.Drawing.Size(70, 15);
             this.temperature.TabIndex = 7;
             this.temperature.Text = "Température";
+            this.temperature.Click += new System.EventHandler(this.temperature_Click);
             // 
             // ZoneGeo
             // 
@@ -463,11 +482,63 @@
             this.Sauvegarder.UseVisualStyleBackColor = false;
             this.Sauvegarder.Click += new System.EventHandler(this.Sauvegarder_Click);
             // 
+            // categoriesTableAdapter
+            // 
+            this.categoriesTableAdapter.ClearBeforeFill = true;
+            // 
+            // lieuBindingSource
+            // 
+            this.lieuBindingSource.DataSource = typeof(TourismApp.Model.Lieu);
+            this.lieuBindingSource.CurrentChanged += new System.EventHandler(this.lieuBindingSource_CurrentChanged);
+            // 
+            // lieuIdDataGridViewTextBoxColumn
+            // 
+            this.lieuIdDataGridViewTextBoxColumn.DataPropertyName = "lieuId";
+            this.lieuIdDataGridViewTextBoxColumn.HeaderText = "lieuId";
+            this.lieuIdDataGridViewTextBoxColumn.Name = "lieuIdDataGridViewTextBoxColumn";
+            // 
+            // nameLieuDataGridViewTextBoxColumn
+            // 
+            this.nameLieuDataGridViewTextBoxColumn.DataPropertyName = "nameLieu";
+            this.nameLieuDataGridViewTextBoxColumn.HeaderText = "nameLieu";
+            this.nameLieuDataGridViewTextBoxColumn.Name = "nameLieuDataGridViewTextBoxColumn";
+            // 
+            // villeDataGridViewTextBoxColumn
+            // 
+            this.villeDataGridViewTextBoxColumn.DataPropertyName = "ville";
+            this.villeDataGridViewTextBoxColumn.HeaderText = "ville";
+            this.villeDataGridViewTextBoxColumn.Name = "villeDataGridViewTextBoxColumn";
+            // 
+            // descriptionDataGridViewTextBoxColumn
+            // 
+            this.descriptionDataGridViewTextBoxColumn.DataPropertyName = "description";
+            this.descriptionDataGridViewTextBoxColumn.HeaderText = "description";
+            this.descriptionDataGridViewTextBoxColumn.Name = "descriptionDataGridViewTextBoxColumn";
+            // 
+            // fillByToolStrip
+            // 
+            this.fillByToolStrip.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.fillByToolStripButton});
+            this.fillByToolStrip.Location = new System.Drawing.Point(20, 60);
+            this.fillByToolStrip.Name = "fillByToolStrip";
+            this.fillByToolStrip.Size = new System.Drawing.Size(931, 25);
+            this.fillByToolStrip.TabIndex = 13;
+            this.fillByToolStrip.Text = "fillByToolStrip";
+            // 
+            // fillByToolStripButton
+            // 
+            this.fillByToolStripButton.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton.Name = "fillByToolStripButton";
+            this.fillByToolStripButton.Size = new System.Drawing.Size(39, 22);
+            this.fillByToolStripButton.Text = "FillBy";
+            this.fillByToolStripButton.Click += new System.EventHandler(this.fillByToolStripButton_Click);
+            // 
             // FormMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(971, 465);
+            this.Controls.Add(this.fillByToolStrip);
             this.Controls.Add(this.Sauvegarder);
             this.Controls.Add(this.panel);
             this.Controls.Add(this.recupLieu);
@@ -482,10 +553,14 @@
             this.Load += new System.EventHandler(this.FormMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.recupLieu)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.lieuBindingSource)).EndInit();
             this.panel.ResumeLayout(false);
             this.panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.categoriesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tourismBDDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureLieu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.lieuBindingSource)).EndInit();
+            this.fillByToolStrip.ResumeLayout(false);
+            this.fillByToolStrip.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -518,5 +593,12 @@
         private MetroFramework.Controls.MetroButton browser;
         private System.Windows.Forms.TextBox Description;
         private System.Windows.Forms.Button Sauvegarder;
+        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
+        private TourismBDDataSet tourismBDDataSet;
+        private System.Windows.Forms.BindingSource categoriesBindingSource;
+        private TourismBDDataSetTableAdapters.CategoriesTableAdapter categoriesTableAdapter;
+        private System.Windows.Forms.ToolStrip fillByToolStrip;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton;
     }
 }

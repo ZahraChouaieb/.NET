@@ -28,5 +28,19 @@ namespace TourismApp.Model
     [MaxLength(256)]
     public String Password { get; set; }
 
-}
+    [MaxLength(256)]
+    public String ConfirmPassword { get; set; }
+
+    }
+    public class LoginModel
+    {
+        [Key]
+        public int LoginId { get; set; }
+        [Required]
+        [Display(Name = "Username")]
+        public string Username { get; set; }
+        [Required]
+        [Display(Name = "Password")]
+        public string Password { get; set; }
+    }
 }

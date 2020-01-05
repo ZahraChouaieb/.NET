@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Data.Entity.Validation;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,7 @@ namespace TourismApp.Forms
         public FormMain()
         {
             InitializeComponent();
+           // FillCombo();
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -44,7 +46,9 @@ namespace TourismApp.Forms
      
         private void FormMain_Load(object sender, EventArgs e)
         {
-     
+            // TODO: cette ligne de code charge les données dans la table 'tourismBDDataSet.Categories'. Vous pouvez la déplacer ou la supprimer selon les besoins.
+            this.categoriesTableAdapter.Fill(this.tourismBDDataSet.Categories);
+
 
             using (MyDbContext db = new MyDbContext())
             {
@@ -185,9 +189,66 @@ namespace TourismApp.Forms
             if (l != null)
                 pictureLieu.Image = Image.FromFile(l.image); 
         }
+      /*  void FillCombo()
+        {
+            SqlConnection oConnexion = new SqlConnection("Data Source=pc-fatma;Initial Catalog=TourismBD;Integrated Security=True");
+            SqlCommand oCommand = new SqlCommand("SELECT * FROM Categories", oConnexion);
+            try
+            {
+                // Ouverture de la connexion et exécution de la requête
+                oConnexion.Open();
+
+                SqlDataReader drCat = oCommand.ExecuteReader();
+                // Parcours de la liste des utilisateurs
+                while (drCat.Read())
+                {
+                    String cName = drCat["name"].ToString();
+                    comboBox1.Items.Add(cName);
+                }
+            }
+            catch (System.Data.SqlClient.SqlException sqlException)
+            {
+                System.Windows.Forms.MessageBox.Show(sqlException.Message);
+            }
+            oConnexion.Close();
+
+        }*/
 
         private void recupLieu_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+
+        }
+
+        private void lieuBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void temperature_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fillByToolStripButton_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                this.categoriesTableAdapter.FillBy(this.tourismBDDataSet.Categories);
+            }
+            catch (System.Exception ex)
+            {
+                System.Windows.Forms.MessageBox.Show(ex.Message);
+            }
 
         }
     }
